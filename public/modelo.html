@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sócio Campeão</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/flex.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section id="app" class="flex">
+        <aside class="flex flex-column gap-32">
+            <div class="logo">
+                <a href="/"><img src="images/logo.svg" alt="Sócio Campeão"></a>
+            </div>
+            <nav>
+                <h4>Sócios</h4>
+                <ul>
+                    <li><a href="#"><img src="images/icone-medalha-bronze.svg" alt="Plano bronze"> <span>Plano Bronze</span></a></li>
+                    <li><a href="#"><img src="images/icone-medalha-prata.svg" alt="Plano prata"> <span>Plano Prata</span></a></li>
+                    <li><a href="#"><img src="images/icone-medalha-ouro.svg" alt="Plano ouro"> <span>Plano Ouro</span></a></li>
+                </ul>
+            </nav>
+
+            <nav>
+                <h4>Outros</h4>
+                <ul>
+                    <li><a href="#"><img src="images/icone-desativo.svg" alt="Plano bronze"> <span>Desativos</span></a></li>
+                </ul>
+            </nav>
+
+            <div class="acao">
+                <button class="botao botao-successo display-block w-100">Adicionar Sócio</button>
+            </div>
+        </aside>
+        <main>
+            <div class="titulo">
+                <h1>Sócios</h1>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nome</th>
+                        <th>Plano</th>
+                        <th>Telefone</th>
+                        <th>Email</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Carlos Rangel</td>
+                        <td>Plano Ouro</td>
+                        <td>(88) 98293.1235</td>
+                        <td>rangel@nomail.com.br</td>
+                        <td class="status"><span class="ativo"></span> Ativo</td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td>Carlos Rangel</td>
+                        <td>Plano Ouro</td>
+                        <td>(88) 98293.1235</td>
+                        <td>rangel@nomail.com.br</td>
+                        <td class="status"><span class="desativo"></span> Desativo</td>
+                    </tr>
+                </tbody>
+            </table>
+            <hr>
+            <div class="titulo">
+                <h1>Adicionar Sócio</h1>
+            </div>
+        </main>
+    </section>
+</body>
+</html>

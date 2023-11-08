@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('flex.css');
+@import url('common.css');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    background-color: #0B0A0A;
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+
+h1, h2, h3, h4, h5, h6{
+    margin-top: 0;
+    margin-bottom: 8px;
+    color: #fff;
+}
+
+hr {
+    margin: 32px 0px;
+    border: 1px solid #232428;
+    border-bottom: 0px;
+}
+
+#app{
+    max-width: 1216px;
+    width: 100%;
+    gap: 0;
+    margin: 32px auto;
+    height: 90vh;
+}
+
+aside{
+    width: 20%;
+    background-color: #222225;
+    border-right: 1px solid #413E40;
+    padding: 32px;
+}
+
+aside nav ul{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+aside nav li a{
+    background-color: #303033;
+    padding: 16px;
+    border-radius: 4px;
+    color: #fff;
+    text-decoration: none;
+    transform: 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+aside nav li a:hover{
+    background-color: rgb(48 48 51 / 80%);
+}
+
+aside nav li a img{
+    width: 24px;
+}
+
+aside .acao{
+    padding-top: 32px;
+}
+
+main{
+    padding: 32px;
+    width: 80%;
+    background-color: #1D1D22;
+}
+
+main .titulo{
+    margin-bottom: 32px;
+}
+
+main h1{
+    font-size: 32px;
+    font-weight: 400;
+}
+
+main table{
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    border: none;
+    border-collapse: collapse;
+}
+
+main table thead{
+    background-color: #232428;
+    font-size: 14px;
+    color: #CBCBC2;
+}
+
+main table thead th{
+    padding: 16px;
+    border-radius: 4px;
+    margin-bottom: 24px;
+}
+
+main table td{
+    padding: 32px 0px;
+    border-bottom: 1px solid #413E40;
+    font-size: 14px;
+}
+
+main table td.status{
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+span.ativo{
+    background-color: #09B374;
+    display: inline-block;
+    height: 6px;
+    width: 6px;
+    border-radius: 50px;
+    border: 5px solid #162222;
+}
+
+span.desativo{
+    background-color: #B31D09;
+    display: inline-block;
+    height: 6px;
+    width: 6px;
+    border-radius: 50px;
+    border: 5px solid #221616;
+}
+
+
+.botao{
+    height: 48px;
+    padding: 16px;
+    color: #fff;
+    border-radius: 4px;
+    border: none;
+    font-weight: bold;
+    font-size: 16px;
+    transform: 0.5s;
+}
+
+.botao-successo{
+    background-color: #56B299;
+}
+
+.botao-successo:hover{
+    background-color: #448a77;
+}

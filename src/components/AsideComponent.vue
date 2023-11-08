@@ -1,0 +1,34 @@
+<template>
+    <aside class="flex flex-column gap-32">
+        <div class="logo">
+            <a href="/"><img src="images/logo.svg" alt="Sócio Campeão"></a>
+        </div>
+        <nav>
+            <h4>Sócios</h4>
+            <ul>
+                <li><a href="#"><img src="images/icone-medalha-bronze.svg" alt="Plano bronze"> <span>Plano Bronze</span></a></li>
+                <li><a href="#"><img src="images/icone-medalha-prata.svg" alt="Plano prata"> <span>Plano Prata</span></a></li>
+                <li><a href="#"><img src="images/icone-medalha-ouro.svg" alt="Plano ouro"> <span>Plano Ouro</span></a></li>
+            </ul>
+        </nav>
+        <nav>
+            <h4>Outros</h4>
+            <ul>
+                <li><a href="#"><img src="images/icone-desativo.svg" alt="Plano bronze"> <span>Desativos</span></a></li>
+            </ul>
+        </nav>
+        <div class="acao">
+            <button class="botao botao-successo display-block w-100">Adicionar Sócio</button>
+        </div>
+  </aside>
+</template>
+
+<script>
+    export default {
+        name: 'AsideComponent'
+    }
+</script>
+
+<style lang="scss" scoped>
+
+</style>
