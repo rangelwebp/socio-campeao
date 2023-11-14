@@ -50,7 +50,7 @@ aside nav ul{
     gap: 16px;
 }
 
-aside nav li a{
+aside nav a{
     background-color: #303033;
     padding: 16px;
     border-radius: 4px;
@@ -62,11 +62,11 @@ aside nav li a{
     justify-content: space-between;
 }
 
-aside nav li a:hover{
+aside nav a:hover{
     background-color: rgb(48 48 51 / 80%);
 }
 
-aside nav li a img{
+aside nav a img{
     width: 24px;
 }
 

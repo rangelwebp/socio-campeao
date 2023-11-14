@@ -1,14 +1,22 @@
 <template>
     <aside class="flex flex-column gap-32">
         <div class="logo">
-            <a href="/"><img src="images/logo.svg" alt="Sócio Campeão"></a>
+            <router-link to="/socios/">
+                <img src="images/logo.svg" alt="Sócio Campeão">
+            </router-link>
         </div>
         <nav>
             <h4>Sócios</h4>
             <ul>
-                <li><a href="#"><img src="images/icone-medalha-bronze.svg" alt="Plano bronze"> <span>Plano Bronze</span></a></li>
-                <li><a href="#"><img src="images/icone-medalha-prata.svg" alt="Plano prata"> <span>Plano Prata</span></a></li>
-                <li><a href="#"><img src="images/icone-medalha-ouro.svg" alt="Plano ouro"> <span>Plano Ouro</span></a></li>
+                <router-link to="/socios/ouro/">
+                    <img src="images/icone-medalha-ouro.svg" alt="Plano ouro"> <span>Plano Ouro</span>
+                </router-link>
+                <router-link to="/socios/bronze">
+                    <img src="images/icone-medalha-bronze.svg" alt="Plano bronze"> <span>Plano Bronze</span>
+                </router-link>
+                <router-link to="/socios/prata">
+                    <img src="images/icone-medalha-prata.svg" alt="Plano prata"> <span>Plano Prata</span>
+                </router-link>
             </ul>
         </nav>
         <nav>

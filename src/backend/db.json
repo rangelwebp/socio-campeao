@@ -1,0 +1,60 @@
+{
+    "socios": [
+      {
+        "id": 1,
+        "nome": "João Silva",
+        "plano": "Bronze",
+        "telefone": "1122334455",
+        "email": "joao.silva@example.com",
+        "status": "ativo"
+      },
+      {
+        "id": 2,
+        "nome": "Mariana Pereira",
+        "plano": "Ouro",
+        "telefone": "1122334466",
+        "email": "mariana.pereira@example.com",
+        "status": "ativo"
+      },
+      {
+        "id": 3,
+        "nome": "Lucas Moura",
+        "plano": "Prata",
+        "telefone": "1122334477",
+        "email": "lucas.moura@example.com",
+        "status": "desativo"
+      },
+      {
+        "id": 4,
+        "nome": "Patricia Santos",
+        "plano": "Bronze",
+        "telefone": "1122334488",
+        "email": "patricia.santos@example.com",
+        "status": "ativo"
+      },
+      {
+        "id": 5,
+        "nome": "Roberto Almeida",
+        "plano": "Ouro",
+        "telefone": "1122334499",
+        "email": "roberto.almeida@example.com",
+        "status": "desativo"
+      },
+      {
+        "id": 6,
+        "nome": "Camila Dias",
+        "plano": "Prata",
+        "telefone": "1122334500",
+        "email": "camila.dias@example.com",
+        "status": "ativo"
+      },
+      {
+        "id": 7,
+        "nome": "Carlos Oliveira",
+        "plano": "Bronze",
+        "telefone": "1122334511",
+        "email": "carlos.oliveira@example.com",
+        "status": "ativo"
+      }
+    ]
+  }

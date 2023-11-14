@@ -16,22 +16,14 @@
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <td>1</td>
-                <td>Carlos Rangel</td>
-                <td>Plano Ouro</td>
-                <td>(88) 98293.1235</td>
-                <td>rangel@nomail.com.br</td>
-                <td class="status"><span class="ativo"></span> Ativo</td>
-            </tr>
-
-            <tr>
-                <td>2</td>
-                <td>Carlos Rangel</td>
-                <td>Plano Ouro</td>
-                <td>(88) 98293.1235</td>
-                <td>rangel@nomail.com.br</td>
-                <td class="status"><span class="desativo"></span> Desativo</td>
+            <tr v-for="socio in socios" :key="socio.id">
+                <td>{{ socio.id }}</td>
+                <td>{{ socio.nome }}</td>
+                <td>{{ socio.plano }}</td>
+                <td>{{ socio.telefone }}</td>
+                <td>{{ socio.email }}</td>
+                <td class="status">
+                  <span class="ativo"></span> Ativo</td>
             </tr>
         </tbody>
     </table>
@@ -41,7 +33,25 @@
 <script>
   export default {
     name: 'HomeView',
+    data(){
+      return{
+        socios: []
+      }
+    },
     components: {
+    },
+    mounted(){
+      this.requisicao();
+    },
+    methods: {
+      requisicao(){
+        fetch('http://localhost:3000/socios/')
+        .then(response => response.json())
+        .then(data => this.socios = data)
+        .catch(
+          error => console.log('Deu erro na requisição', error)
+        );
+      }
     }
   }
 </script>
