@@ -1,35 +1,39 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-import LoginView from '../views/LoginView.vue'
+//import LoginView from '../views/LoginView.vue'
 import FilterView from '../views/FilterView.vue'
+import AddView from '../views/AddView.vue'
 
 const routes = [
   {
-    path: '/',
-    name: 'login',
-    component: LoginView
-  },
-  {
     path: '/socios',
-    name: 'socios',
-    component: HomeView,
+    name: 'Socios',
+    component: HomeView
   },
   {
     path: '/socios/ouro',
-    name: 'ouro',
+    name: 'Ouro',
     component: FilterView,
+    props: { filterType: 'ouro' }
   },
   {
     path: '/socios/prata',
-    name: 'prata',
+    name: 'Prata',
     component: FilterView,
+    props: { filterType: 'prata' }
   },
   {
     path: '/socios/bronze',
-    name: 'bronze',
+    name: 'Bronze',
     component: FilterView,
+    props: { filterType: 'bronze' }
   },
-]
+  {
+    path: '/socios/adicionar',
+    name: 'Adicionar',
+    component: AddView
+  }
+];
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
