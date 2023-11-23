@@ -18,7 +18,7 @@
         <tbody>
             <tr v-for="socio in socios" :key="socio.id">
                 <td>{{ socio.id }}</td>
-                <td>{{ socio.nome }}</td>
+                <td><router-link :to="`/socio/${socio.id}`">{{ socio.nome }}</router-link></td>
                 <td>{{ socio.plano }}</td>
                 <td>{{ socio.telefone }}</td>
                 <td>{{ socio.email }}</td>
@@ -56,3 +56,8 @@
   }
 </script>
 
+<style>
+td a{
+  color: #fff;
+}
+</style>

@@ -3,6 +3,7 @@ import HomeView from '../views/HomeView.vue'
 //import LoginView from '../views/LoginView.vue'
 import FilterView from '../views/FilterView.vue'
 import AddView from '../views/AddView.vue'
+import SocioDetails from "@/views/SocioDetails.vue";
 
 const routes = [
   {
@@ -32,7 +33,14 @@ const routes = [
     path: '/socios/adicionar',
     name: 'Adicionar',
     component: AddView
+  },
+  {
+    path: '/socio/:id',
+    name: 'SocioDetails',
+    component: SocioDetails,
+    props: true
   }
+
 ];
 
 const router = createRouter({

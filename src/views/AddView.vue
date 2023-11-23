@@ -109,4 +109,41 @@ export default {
   form label{
     color: #ffffff;
   }
+
+  form input[type=text],
+  form input[type=email],
+  form input[type=password],
+  form input[type=tel],
+  form input[type=number]{
+    min-height: 24px;
+    padding: 8px;
+    border-radius: 4px;
+    background-color: #3b3b42;
+    border: none;
+    color: #ffffff;
+  }
+
+  select{
+    min-height: 40px;
+    border-radius: 4px;
+    background-color: #3b3b42;
+    border: none;
+    color: #ffffff;
+  }
+
+  form button{
+    height: 48px;
+    padding: 16px;
+    color: #fff;
+    border-radius: 4px;
+    border: none;
+    font-weight: bold;
+    font-size: 16px;
+    background-color: #56B299;
+  }
+
+  form button[disabled]{
+    background-color: #1D1D22;
+    color: #413E40;
+  }
 </style>
